@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salon-tour - Glow Beauty Salon</title>
+    <link rel="stylesheet" href="./glowsalon.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <a href="index.html">
+        <img src="img/image.glow.png" alt="logo" />
+      </a>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#home">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#services">OUR SERVICES</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="braids.html">Braids</a></li>
+              <li><a href="wigs.html">Wigs</a></li>
+              <li><a href="makeup.html">Makeup</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#about">ABOUT US</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="salon-tour.html">Salon Tour</a></li>
+              <li><a href="#">Our Policies</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="products.html">PRODUCT</a>
+          </li>
+
+          <li class="signup"><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sign-Up Form Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            autocomplete="new-password"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <section class="tour">
+      <h3>About Glow Beauty Salon</h3>
+      
+      <h1>Welcome to Glow Beauty Salon</h1>
+      
+      <p class="keep">
+        We'll keep it short and simple because we believe in quality over
+        quantity.
+      </p>
+      
+      <p class="modern">
+        <span>GLOW BEAUTY SALON</span> is a modern boutique hair salon based in Isolo-Mainland, Lagos, Nigeria. Our philosophy is derived from providing
+        excellent customer service, and going over and beyond for each of our
+        clients. As much as we want you to look good, we know service goes hand
+        in hand with delivering impeccable results.
+      </p>
+      
+      <p class="modern">
+        We won’t waste your time, so don’t worry about us keeping you in the
+        salon all day as it’s just NOT what we do.
+      </p>
+      
+      <p class="modern">
+        We specialise in ALL hair types – that includes European and Afro hair,
+        and believe in maintaining the integrity of your hair as well as keeping
+        it healthy. Lastly, we offer consultations if you ever need advice on
+        your hair.
+      </p>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

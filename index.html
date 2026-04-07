@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow Beauty Salon</title>
+    <link rel="stylesheet" href="./glowsalon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="heading">
+      <a href="index.html"> 
+        <img src="img/image.glow.png" alt="logo" />
+      </a>
+     
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#home">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#services">OUR SERVICES</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="braids.html">Braids</a></li>
+              <li><a href="wigs.html">Wigs</a></li>
+              <li><a href="makeup.html">Makeup</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="about.html">ABOUT US</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="salon-tour.html">Salon Tour</a></li>
+              <li><a href="#">Our Policies</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="products.html">PRODUCT</a>
+          </li>
+
+          <li class="signup"><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sign-Up Form Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            autocomplete="new-password"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <section class="hero" id="home">
+       <video autoplay muted loop playsinline class="bg-video">
+        <source src="video-project-1.mp4" type="video/mp4"></video>
+      <div class="hero-text">
+        <h1>Your Beauty, Our Passion</h1>
+        <p>
+          Experience trendy cuts, vibrant colors, and luxurious treatments that
+          make you look amazing and feel unstoppable.
+        </p>
+        <p class="tagline">Luxury Hair • Flawless Beauty • Premium Care</p>
+        <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to..."
+          class="cta-btn"
+          >Book Appointment</a
+        >
+      </div>
+    </section>
+
+    <section class="about" id="about" data-aos="fade-right">
+      <p>
+        At <span class="glow">Glow Beauty Salon</span>, we believe
+        <span class="glow">beauty</span> is more than just a
+        <span class="glow">look</span> – it’s a
+        <span class="glow">feeling.</span> Every visit is an
+        <span class="glow">experience</span>, where, comfort, creativity, and
+        care come together.</span> Because at
+        <span class="glow">Glow Beauty Salon</span>, you deserve to
+        <span class="glow">shine.</span>
+      </p>
+    </section>
+
+    <section class="services" id="services">
+      <h1>Our Services</h1>
+
+      <div class="service-container">
+        <div class="card" data-link="wigs.html" data-aos="fade-up">
+          <img src="img/show3.jpg" alt="show3" />
+
+          <div class="text">
+            <p>Beautiful and long-lasting Wigs</p>
+          </div>
+        </div>
+
+        <div class="card" data-link="braids.html" data-aos="fade-up">
+          <img src="img/show1.jpg" alt="show1" />
+
+          <div class="text">
+            <p>Perfect fit and natural look</p>
+          </div>
+        </div>
+
+        <div class="card" data-link="makeup.html" data-aos="fade-up">
+          <img src="img/makeup5.jpg" alt="show3" />
+
+          <div class="text">
+            <p>Professional makeup for all events</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h1>What Our Clients Are Saying</h1>
+      
+      <div class="testimonials-container">
+
+        <div class="testimonial-card" data-aos="fade-up">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>"I really love this salon, the staff are so friendly, my hair even came out than i expected. I'll definitely be coming back!."</i></p>
+        <h4><i>- Victoria I.</i></h4>
+        </div>
+
+      <div class="testimonial-card" data-aos="fade-up">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>I have been coming here for years and they never diappoint. The consistency, professionalism, and quality are unmatched.</i></p>
+        <h4><i>- Oyin F.</i></h4>
+        </div>
+
+      <div class="testimonial-card"fade-up data-aos="">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>They did my makeup for a special event and I felt absolutely beautiful. Everything was flawless and lasted all day. Highly recommend!</i></p>
+        <h4><i>- Sophia T.</i></h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>ADDRESS</h3>
+      <p>23 Association, 4th Avenue, Isolo, Lagos 200263.</p>
+
+      <h3>CONTACT US</h3>
+      <p><span>Tel:</span> 09136682797 OR 08137392419</p>
+      <p>
+        <span>Email:</span>
+        <a class="email" href="mailto:goodnewsumoh94@gmail.com"
+          >goodnewsumoh94@gmail.com</a
+        >
+      </p>
+
+      <h3>OPENING HOURS</h3>
+      <p><span>Mon-Fri:</span> 10:00am-8:00pm</p>
+      <p><span>Saturday:</span> 10:00am-7:00pm</p>
+      <p><span>Sunday:</span> 11:00am-6:00pm</p>
+
+      <a
+        href="https://wa.me/2349136682797text=Hello,%20I%20want%20to..."
+        class="btnwhatsapp"
+      >
+        Chat on WhatsApp
+      </a>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,   // smooth speed
+    easing: 'ease-in-out',
+    once: true        // only animate once
+  });
+</script>
+  </body>
+</html>

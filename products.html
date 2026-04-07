@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Glow Beauty Salon</title>
+    <link rel="stylesheet" href="./glowsalon.css">
+</head>
+<body>
+    <header class="heading">
+      <a href="index.html"> 
+        <img src="img/image.glow.png" alt="logo" />
+      </a>
+     
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#services">OUR SERVICES</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="braids.html">Braids</a></li>
+              <li><a href="wigs.html">Wigs</a></li>
+              <li><a href="makeup.html">Makeup</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#about">ABOUT US</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="salon-tour.html">Salon Tour</a></li>
+              <li><a href="#">Our Policies</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="products">PRODUCT</a>
+          </li>
+
+          <li class="signup"><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sign-Up Form Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            autocomplete="new-password"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+      <img src="img/hairgrowth.jpg" alt="beauty products">
+      <div class="text">
+        <h2>Beauty Products</h2>
+      </div>
+      
+    </section>
+
+    <!-- Services -->
+    <section class="services2">
+      <div class="cards">
+        <img src="img/indian.jpg" alt="hair cream">
+        <h3>Hair Cream</h3>
+        <p>₦3,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/wigcap.jpg" alt="wigcap">
+        <h3>Wig Caps</h3>
+        <p>₦1,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/exten.jpg" alt="hair extension">
+        <h3>Hair Extension</h3>
+        <p>₦2,000 - ₦7,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/lipstick.jpg" alt="lipstick">
+        <h3>Lip Stick</h3>
+        <p>₦1,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+      <div class="cards">
+        <img src="img/lipgloss.jpg" alt="lipgloss">
+        <h3>Lip Gloss</h3>
+        <p>₦1,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/hairgel.jpg" alt="hairgel">
+        <h3>Hair gel</h3>
+        <p>₦2,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/silky.jpg" alt="hairgel">
+        <h3>Silky Straight Tape-In Extensions</h3>
+        <p>₦192,500 - ₦297,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/kinky.jpg" alt="hairgel">
+        <h3>Kinky Curly Tape-In Extensions</h3>
+        <p>₦210,000 - ₦262,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/straight.jpg" alt="hairgel">
+        <h3>Kinky Straight Tape-In Extensions</h3>
+        <p>₦192,500 - ₦297,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/raw-wavy.jpg" alt="hairgel">
+        <h3>Raw Wavy Tape-In Extensions</h3>
+        <p>₦227,500 - ₦297,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/yaki.jpg" alt="hairgel">
+        <h3>Yaki Straight Tape-In Extensions</h3>
+        <p>₦192,500 - ₦297,500</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/silk.jpg" alt="hairgel">
+        <h3>Silk Press Straightener</h3>
+        <p>₦180,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/smooth.jpg" alt="hairgel">
+        <h3>Smoothing Hair Brush</h3>
+        <p>₦10,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/Ionic.jpg" alt="hairgel">
+        <h3>Ionic Paddle Brush</h3>
+        <p>₦25,300</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+      <div class="cards">
+        <img src="img/Silk-scarf.jpg" alt="hairgel">
+        <h3>Silk Scarf</h3>
+        <p>₦10,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>ADDRESS</h3>
+      <p>23 Association, 4th Avenue, Isolo, Lagos 200263.</p>
+
+      <h3>CONTACT US</h3>
+      <p><span>Tel:</span> 09136682797 OR 08137392419</p>
+      <p>
+        <span>Email:</span>
+        <a class="email" href="mailto:goodnewsumoh94@gmail.com"
+          >goodnewsumoh94@gmail.com</a
+        >
+      </p>
+
+      <h3>OPENING HOURS</h3>
+      <p><span>Mon-Fri:</span> 10:00am-8:00pm</p>
+      <p><span>Saturday:</span> 10:00am-7:00pm</p>
+      <p><span>Sunday:</span> 11:00am-6:00pm</p>
+
+      <a
+        href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to..."
+        target="_blank"
+        class="btnwhatsapp"
+      >
+        Chat on WhatsApp
+      </a>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

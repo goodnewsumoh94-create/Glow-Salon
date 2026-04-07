@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup - Glow Beauty Salon</title>
+    <link rel="stylesheet" href="./glowsalon.css">
+</head>
+<body>
+    <header class="heading">
+        <a href="index.html"> 
+          <img src="img/image.glow.png" alt="logo" />
+        </a>
+     
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html">HOME</a></li>
+
+          <li class="dropdown">
+            <a href="#services">OUR SERVICES</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="braids.html">Braids</a></li>
+              <li><a href="wigs.html">Wigs</a></li>
+              <li><a href="makeup.html">Makeup</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#about">ABOUT US</a>
+
+            <ul class="dropdown-menu">
+              <li><a href="salon-tour.html">Salon Tour</a></li>
+              <li><a href="#">Our Policies</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="products.html">PRODUCT</a>
+          </li>
+
+          <li class="signup"><a href="#">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+        <!-- Sign-Up Form Modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+            autocomplete="new-password"
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="service-hero">
+      <img src="img/makeup3a.jpg" alt="makeup">
+
+      <div class="text">
+        <h2>Makeup Services</h2>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services2">
+      <div class="cards">
+        <img src="img/bridal.jpg" alt="Bridal makeup">
+        <h3>Bridal Makeup</h3>
+        <p>₦30,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Bridal%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/makeup6a.jpg" alt="">
+        <h3>Party Glam</h3>
+        <p>₦10,000 - ₦20,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Party%20GLam..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/coco-jones3.jpg" alt="">
+        <h3>Natural Glam</h3>
+        <p>₦5,000 - ₦15,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/makeup5.jpg" alt="">
+        <h3>Full Glam</h3>
+        <p>₦50,000 - ₦75,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20Full%20Glam..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/makeup2.jpg" alt="">
+        <h3>PhotoShoot Makeup</h3>
+        <p>₦10,000 - ₦15,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20PhotoShoot%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+
+      <div class="cards">
+        <img src="img/makeup1.jpg" alt="">
+        <h3>TouchUp Makeup</h3>
+        <p>₦5,000 - ₦15,000</p>
+         <a
+          href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to%20book%20an%20Appointment%20for%20a%20TouchUp%20Makeup..."
+          class="book-btn"
+          >Book Now</a
+        >
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>ADDRESS</h3>
+      <p>23 Association, 4th Avenue, Isolo, Lagos 200263.</p>
+
+      <h3>CONTACT US</h3>
+      <p><span>Tel:</span> 09136682797 OR 08137392419</p>
+      <p>
+        <span>Email:</span>
+        <a class="email" href="mailto:goodnewsumoh94@gmail.com"
+          >goodnewsumoh94@gmail.com</a
+        >
+      </p>
+
+      <h3>OPENING HOURS</h3>
+      <p><span>Mon-Fri:</span> 10:00am-8:00pm</p>
+      <p><span>Saturday:</span> 10:00am-7:00pm</p>
+      <p><span>Sunday:</span> 11:00am-6:00pm</p>
+
+      <a
+        href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to..."
+        target="_blank"
+        class="btnwhatsapp"
+      >
+        Chat on WhatsApp
+      </a>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
