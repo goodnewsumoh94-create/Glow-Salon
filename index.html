@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glow Beauty Salon</title>
     <link rel="stylesheet" href="./glowsalon.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="heading">
-      <a href="index.html"> 
+      <a href="index.html">
         <img src="img/image.glow.png" alt="logo" />
       </a>
-     
 
       <div class="menu-toggle" id="menu-toggle">
         <span></span>
@@ -22,10 +24,10 @@
 
       <nav>
         <ul id="nav-menu">
-          <li><a href="#home">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
 
           <li class="dropdown">
-            <a href="#services">OUR SERVICES</a>
+            <a href="#">OUR SERVICES</a>
 
             <ul class="dropdown-menu">
               <li><a href="braids.html">Braids</a></li>
@@ -35,11 +37,11 @@
           </li>
 
           <li class="dropdown">
-            <a href="about.html">ABOUT US</a>
+            <a href="#">ABOUT US</a>
 
             <ul class="dropdown-menu">
               <li><a href="salon-tour.html">Salon Tour</a></li>
-              <li><a href="#">Our Policies</a></li>
+              <li><a href="ourpolicies.html">Our Policies</a></li>
             </ul>
           </li>
 
@@ -74,8 +76,9 @@
     </div>
 
     <section class="hero" id="home">
-       <video autoplay muted loop playsinline class="bg-video">
-        <source src="video-project-1.mp4" type="video/mp4"></video>
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="video-project-1.mp4" type="video/mp4" />
+      </video>
       <div class="hero-text">
         <h1>Your Beauty, Our Passion</h1>
         <p>
@@ -92,23 +95,30 @@
     </section>
 
     <section class="about" id="about" data-aos="fade-right">
-      <p>
-        At <span class="glow">Glow Beauty Salon</span>, we believe
-        <span class="glow">beauty</span> is more than just a
-        <span class="glow">look</span> – it’s a
-        <span class="glow">feeling.</span> Every visit is an
-        <span class="glow">experience</span>, where, comfort, creativity, and
-        care come together.</span> Because at
-        <span class="glow">Glow Beauty Salon</span>, you deserve to
-        <span class="glow">shine.</span>
-      </p>
+      <div>
+        <p>
+          At <span class="glow">Glow Beauty Salon</span>, we believe
+          <span class="glow">beauty</span> is more than just a
+          <span class="glow">look</span> – it’s a
+          <span class="glow">feeling.</span> Every visit is an
+          <span class="glow">experience</span>, where, comfort, creativity, and
+          care come together. Because at
+          <span class="glow">Glow Beauty Salon</span>, you deserve to
+          <span class="glow">shine.</span>
+        </p>
+      </div>
     </section>
 
     <section class="services" id="services">
       <h1>Our Services</h1>
 
       <div class="service-container">
-        <div class="card" data-link="wigs.html" data-aos="fade-up">
+        <div
+          class="card"
+          data-link="wigs.html"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <img src="img/show3.jpg" alt="show3" />
 
           <div class="text">
@@ -116,7 +126,12 @@
           </div>
         </div>
 
-        <div class="card" data-link="braids.html" data-aos="fade-up">
+        <div
+          class="card"
+          data-link="braids.html"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <img src="img/show1.jpg" alt="show1" />
 
           <div class="text">
@@ -124,7 +139,12 @@
           </div>
         </div>
 
-        <div class="card" data-link="makeup.html" data-aos="fade-up">
+        <div
+          class="card"
+          data-link="makeup.html"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
           <img src="img/makeup5.jpg" alt="show3" />
 
           <div class="text">
@@ -137,25 +157,165 @@
     <!-- TESTIMONIALS -->
     <section class="testimonials">
       <h1>What Our Clients Are Saying</h1>
-      
+
       <div class="testimonials-container">
-
-        <div class="testimonial-card" data-aos="fade-up">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p><i>"I really love this salon, the staff are so friendly, my hair even came out than i expected. I'll definitely be coming back!."</i></p>
-        <h4><i>- Victoria I.</i></h4>
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="50"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >"I really love this salon, the staff are so friendly, my hair
+              even came out than i expected. I'll definitely be coming
+              back!."</i
+            >
+          </p>
+          <h4><i>- Victoria I.</i></h4>
         </div>
 
-      <div class="testimonial-card" data-aos="fade-up">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p><i>I have been coming here for years and they never diappoint. The consistency, professionalism, and quality are unmatched.</i></p>
-        <h4><i>- Oyin F.</i></h4>
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="80"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >I have been coming here for years and they never diappoint. The
+              consistency, professionalism, and quality are unmatched.</i
+            >
+          </p>
+          <h4><i>- Oyin F.</i></h4>
         </div>
 
-      <div class="testimonial-card"fade-up data-aos="">
-        <p>⭐⭐⭐⭐⭐</p>
-        <p><i>They did my makeup for a special event and I felt absolutely beautiful. Everything was flawless and lasted all day. Highly recommend!</i></p>
-        <h4><i>- Sophia T.</i></h4>
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Anita Itopa.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Amaka C.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Goodnews U.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Freedah O.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Chi L.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Sandra N.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Umeh C.</i></h4>
+        </div>
+
+        <div
+          class="testimonial-card"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>
+            <i
+              >They did my makeup for a special event and I felt absolutely
+              beautiful. Everything was flawless and lasted all day. Highly
+              recommend!</i
+            >
+          </p>
+          <h4><i>- Victory A.</i></h4>
         </div>
       </div>
     </section>
@@ -179,7 +339,7 @@
       <p><span>Sunday:</span> 11:00am-6:00pm</p>
 
       <a
-        href="https://wa.me/2349136682797text=Hello,%20I%20want%20to..."
+        href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to..."
         class="btnwhatsapp"
       >
         Chat on WhatsApp
@@ -189,12 +349,12 @@
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
-<script>
-  AOS.init({
-    duration: 1000,   // smooth speed
-    easing: 'ease-in-out',
-    once: true        // only animate once
-  });
-</script>
+    <script>
+      AOS.init({
+        duration: 1000, // smooth speed
+        easing: "ease-in-out",
+        once: true, // only animate once
+      });
+    </script>
   </body>
 </html>

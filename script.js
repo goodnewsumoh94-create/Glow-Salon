@@ -69,3 +69,11 @@ cards.forEach(card => {
   });
 });
 
+  AOS.init({
+    duration: 1000,   // smooth speed
+    easing: 'ease-in-out',
+    once: true        // only animate once
+  });
+
+  
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salon-tour - Glow Beauty Salon</title>
     <link rel="stylesheet" href="./glowsalon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="heading">
@@ -20,10 +21,10 @@
 
       <nav>
         <ul id="nav-menu">
-          <li><a href="#home">HOME</a></li>
+          <li><a href="index.html">HOME</a></li>
 
           <li class="dropdown">
-            <a href="#services">OUR SERVICES</a>
+            <a href="#">OUR SERVICES</a>
 
             <ul class="dropdown-menu">
               <li><a href="braids.html">Braids</a></li>
@@ -33,11 +34,11 @@
           </li>
 
           <li class="dropdown">
-            <a href="#about">ABOUT US</a>
+            <a href="#">ABOUT US</a>
 
             <ul class="dropdown-menu">
               <li><a href="salon-tour.html">Salon Tour</a></li>
-              <li><a href="#">Our Policies</a></li>
+              <li><a href="ourpolicies.html">Our Policies</a></li>
             </ul>
           </li>
 
@@ -70,6 +71,7 @@
         <p id="message"></p>
       </div>
     </div>
+    <div>
 
     <section class="tour">
       <h3>About Glow Beauty Salon</h3>
@@ -98,9 +100,77 @@
         and believe in maintaining the integrity of your hair as well as keeping
         it healthy. Lastly, we offer consultations if you ever need advice on
         your hair.
+      </p> 
+    </section>
+
+    <div class="salon-card">
+   <img src="img/interior1.jpg" alt="">
+   <img src="img/interior2.jpg" alt="">
+    <img src="img/interior5.jpg" alt="">
+ </div>
+
+   <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h1>What Our Clients Are Saying</h1>
+      
+      <div class="testimonials-container">
+
+        <div class="testimonial-card" data-aos="fade-right" data-aos-delay="100">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>"I really love this salon, the staff are so friendly, my hair even came out than i expected. I'll definitely be coming back!."</i></p>
+        <h4><i>- Victoria I.</i></h4>
+        </div>
+
+      <div class="testimonial-card" data-aos="fade-right" data-aos-delay="200">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>I have been coming here for years and they never diappoint. The consistency, professionalism, and quality are unmatched.</i></p>
+        <h4><i>- Oyin F.</i></h4>
+        </div>
+
+      <div class="testimonial-card" data-aos="fade-right" data-aos-delay="500">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p><i>They did my makeup for a special event and I felt absolutely beautiful. Everything was flawless and lasted all day. Highly recommend!</i></p>
+        <h4><i>- Sophia T.</i></h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h3>ADDRESS</h3>
+      <p>23 Association, 4th Avenue, Isolo, Lagos 200263.</p>
+
+      <h3>CONTACT US</h3>
+      <p><span>Tel:</span> 09136682797 OR 08137392419</p>
+      <p>
+        <span>Email:</span>
+        <a class="email" href="mailto:goodnewsumoh94@gmail.com"
+          >goodnewsumoh94@gmail.com</a
+        >
       </p>
+
+      <h3>OPENING HOURS</h3>
+      <p><span>Mon-Fri:</span> 10:00am-8:00pm</p>
+      <p><span>Saturday:</span> 10:00am-7:00pm</p>
+      <p><span>Sunday:</span> 11:00am-6:00pm</p>
+
+      <a
+        href="https://wa.me/2349136682797?text=Hello,%20I%20want%20to..."
+        target="_blank"
+        class="btnwhatsapp"
+      >
+        Chat on WhatsApp
+      </a>
     </section>
 
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
   </body>
 </html>

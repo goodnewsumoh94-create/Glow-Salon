@@ -3,6 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: url(img/cback.png);
   padding-top: 90px;
+  overflow-x: hidden;
 }
 
 .heading {
@@ -200,6 +201,18 @@ section {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .bg-video {
+    width: 410%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bg-video {
+    width: 400%;
+  }
 }
 
 .hero::before {
@@ -430,7 +443,7 @@ section {
   .heading {
     flex-direction: column;
     height: auto;
-    padding: 10px;
+    padding: 6px;
   }
 
   .heading img {
@@ -514,7 +527,7 @@ section {
 }
 
 .menu-toggle span {
-  width: 25px;
+  width: 30px;
   height: 3px;
   background: goldenrod;
   transition: 0.3s;
@@ -565,6 +578,37 @@ section {
   }
 }
 
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+  }
+    #nav-menu {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: black;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow-y: scroll;
+    transition: max-height 0.4s ease;
+  }
+
+  #nav-menu.active {
+    max-height: 400px;
+  }
+
+  #nav-menu li {
+    padding: 15px 0;
+  }
+}
+
 /* MOBILE DROPDOWN FIX */
 @media (max-width: 768px) {
   .dropdown-menu {
@@ -578,10 +622,34 @@ section {
   .dropdown.open .dropdown-menu {
     display: block;
   }
+
+  .menu-toggle {
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 45px;
+  }  
 }
 
 #nav-menu {
   transition: all 0.3s ease;
+}
+
+/* Mobile nested dropdown */
+#navMenu li.dropdown > .dropdown-menu {
+  display: none;
+  flex-direction: column;
+}
+
+#navMenu li.dropdown.active > .dropdown-menu {
+  display: flex;
+}
+
+/* Add a little arrow for mobile */
+#navMenu li.dropdown > a::after {
+  content: " ▼";
+  font-size: 0.7em;
+  margin-left: 5px;
 }
 
 /* TESTIMONIAL SECTION */
@@ -765,31 +833,154 @@ section {
   transform: scale(1.05);
 }
 
-.tour{
-  background: linear-gradient(to right, white, goldenrod);
+.tour {
+  background: linear-gradient(to right, rgb(203, 200, 200), rgb(141, 106, 19));
   /* text-align: center; */
   padding: 20px;
 }
 
-.tour h3{
+.tour h3 {
   font-size: 33px;
   font-weight: 600;
   letter-spacing: 2.5px;
 }
 
-.tour h1{
+.tour h1 {
   font-size: 50px;
 }
 
-.keep{
+.keep {
   font-weight: 600;
 }
 
-.modern{
+.modern {
   line-height: 1.5;
   font-weight: 540;
 }
 
-.modern span{
+.modern span {
   font-weight: 600;
 }
+
+.salon-card{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px;
+}
+
+.salon-card img{
+  width: 30%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tour {
+    padding: 100px 20px 40px;
+    text-align: center;
+  }
+
+  .tour h1 {
+    font-size: 28px;
+  }
+
+  .tour h3 {
+    font-size: 18px;
+  }
+
+  .tour p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .salon-card {
+    flex-direction: column;
+    align-items: center;
+  }
+    .salon-card img {
+    width: 90%;
+  }
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.testimonial-card {
+  flex: 1;
+  padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+}
+
+
+
+.policies {
+  padding: 120px 20px;
+  background: rgb(98, 72, 8);
+  color: white;
+  text-align: center;
+}
+
+.policies-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.policies h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.policy-card {
+  background: #111;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.policy-card h3 {
+  margin-bottom: 10px;
+  color: rgb(186, 139, 19); /* soft purple luxury tone */
+}
+
+@media (max-width: 768px) {
+  .policies h1 {
+    font-size: 28px;
+  }
+
+  .policy-card {
+    padding: 15px;
+  }
+}
+
