@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   background: url(img/cback.png);
+  background-attachment: fixed;
   padding-top: 90px;
   overflow-x: hidden;
 }
@@ -52,79 +53,6 @@ body {
 
 section {
   margin-bottom: 60px;
-}
-
-/* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-
-.modal h2 {
-  color: goldenrod;
-}
-
-.modal-content {
-  background: #111;
-  padding: 30px;
-  border-radius: 15px;
-  width: 350px;
-  text-align: center;
-}
-
-.modal-content input {
-  width: 80%;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  background: #222;
-  color: white;
-  box-shadow: 0 0 5px goldenrod;
-}
-
-.modal-content input:focus {
-  box-shadow: 0 0 15px goldenrod;
-}
-
-.modal-content button {
-  width: 85%;
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(to right, rgb(228, 194, 3), goldenrod);
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px goldenrod;
-  transition: all 0.3s ease;
-}
-
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.signup {
-  background: linear-gradient(to right, rgb(51, 50, 50), rgb(188, 161, 23));
-  border-radius: 30px;
-  padding: 15px 30px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  margin-right: 40px;
 }
 
 /* dropdown container */
@@ -181,10 +109,10 @@ section {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  /* background:
+  background:
     linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
     url("img/hero.jpg");
-  background-size: cover; */
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,30 +120,7 @@ section {
   color: goldenrod;
 }
 
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-@media (max-width: 768px) {
-  .bg-video {
-    width: 410%;
-  }
-}
-
-@media (max-width: 1024px) {
-  .bg-video {
-    width: 400%;
-  }
-}
-
-.hero::before {
+/* .hero::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -224,7 +129,7 @@ section {
   top: 0;
   left: 0;
   z-index: 0;
-}
+} */
 
 .hero-text h1 {
   position: relative;
@@ -264,6 +169,49 @@ section {
 }
 
 /* Basic button style */
+.cta-btn1 {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: goldenrod;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  /* animation */
+  animation: pulse 1.8s ease-in-out infinite;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* pulse animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.7);
+  }
+}
+
+/* stronger effect on hover */
+.cta-btn1:hover {
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+
 .cta-btn {
   display: inline-block;
   background: transparent;
@@ -304,7 +252,7 @@ section {
 .cta-btn:hover {
   color: white;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(212, 715, 55, 0.6);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
 }
 
 .btnwhatsapp {
@@ -437,6 +385,9 @@ section {
 .email {
   color: white;
 }
+.email:hover{
+  color: blue;
+}
 
 @media (max-width: 768px) {
   /* HEADER */
@@ -510,12 +461,6 @@ section {
     font-size: 15px;
     padding: 40px 15px;
   }
-
-  /* SIGNUP BUTTON */
-  .signup {
-    margin: 10px 0;
-    padding: 10px 20px;
-  }
 }
 
 /* HAMBURGER STYLE */
@@ -585,7 +530,7 @@ section {
     right: 60px;
     top: 30px;
   }
-    #nav-menu {
+  #nav-menu {
     position: absolute;
     top: 90px;
     left: 0;
@@ -628,7 +573,7 @@ section {
     position: absolute;
     right: 40px;
     top: 45px;
-  }  
+  }
 }
 
 #nav-menu {
@@ -661,6 +606,7 @@ section {
     url("img/your-image.jpg") center/cover no-repeat;
   border-top: 1px solid rgba(212, 175, 55, 0.2);
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  overflow: hidden;
 }
 
 .testimonials h1 {
@@ -670,11 +616,35 @@ section {
 
 /* CONTAINER */
 .testimonials-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
+  width: 100%;
+  /* max-width: 100%; */
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 10px 0;
+  cursor: grab;
+  /* position: relative; */
+  scroll-behavior: smooth;
+  /* scrollbar-width: none; */
 }
+
+.testimonials-container:active {
+  cursor: grabbing;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 30px;
+  /* flex-wrap: nowrap; */
+  will-change: transform;
+  width: auto;
+  cursor: grab;
+  /* animation: scroll 35s linear infinite; */
+}
+
+/* .testimonial-track:hover {
+  animation-play-state: paused;
+} */
 
 /* CARD */
 .testimonial-card {
@@ -688,12 +658,26 @@ section {
   backdrop-filter: blur(10px);
   transition: 0.3s;
   margin-bottom: 20px;
+  min-width: 280px;
+  max-width: 90vw;
+  flex-shrink: 0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 /* HOVER EFFECT */
 .testimonial-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* TEXT */
@@ -707,6 +691,7 @@ section {
 
 @media (max-width: 768px) {
   .testimonials-container {
+    min-width: 85vw;
     flex-direction: column;
     align-items: center;
   }
@@ -862,14 +847,14 @@ section {
   font-weight: 600;
 }
 
-.salon-card{
+.salon-card {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 40px;
 }
 
-.salon-card img{
+.salon-card img {
   width: 30%;
   border-radius: 10px;
 }
@@ -900,20 +885,9 @@ section {
     flex-direction: column;
     align-items: center;
   }
-    .salon-card img {
+  .salon-card img {
     width: 90%;
   }
-}
-
-.testimonials-container {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.testimonial-card {
-  flex: 1;
-  padding: 20px;
 }
 
 /* MOBILE */
@@ -927,8 +901,6 @@ section {
     width: 90%;
   }
 }
-
-
 
 .policies {
   padding: 120px 20px;
@@ -960,7 +932,9 @@ section {
   margin-bottom: 20px;
   border-radius: 10px;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Hover effect */
@@ -983,4 +957,3 @@ section {
     padding: 15px;
   }
 }
-

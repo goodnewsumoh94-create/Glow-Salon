@@ -1,79 +1,152 @@
-// Get elements
-const signupButton = document.querySelector('.signup'); // my existing signup button
-const modal = document.getElementById('signupModal');
-const closeBtn = document.querySelector('.modal .close');
-const form = document.getElementById('signupForm');
-const message = document.getElementById('message');
+// const toggle = document.getElementById("menu-toggle");
+// const menu = document.getElementById("nav-menu");
 
-// Show modal on click
-signupButton.addEventListener('click', (e) => {
-  e.preventDefault(); // prevent default link behavior
-  modal.style.display = 'flex';
-});
+// toggle.addEventListener("click", () => {
+//   toggle.classList.toggle("active");
+//   menu.classList.toggle("active");
+// });
 
-// Close modal when × is clicked
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
+// const dropdowns = document.querySelectorAll(".dropdown");
 
-// Close modal if clicking outside the content
-window.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
-});
+// dropdowns.forEach((drop) => {
+//   drop.addEventListener("click", () => {
+//     drop.classList.toggle("open");
+//   });
+// });
 
-// Form validation
-form.addEventListener('submit', function(e){
-  e.preventDefault();
-
-  const username = document.getElementById('username').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const password = document.getElementById('password').value.trim();
-
-  if(username && email && password.length >= 6){
-    message.textContent = `Thank you, ${username}! You are signed up successfully.`;
-    message.style.color = "#00ff00";
-    form.reset();
-    setTimeout(() => modal.style.display = 'none', 2000); // auto-close after 2s
-  } else {
-    message.textContent = "Please fill all fields correctly. Password must be at least 6 characters.";
-    message.style.color = "red";
-  }
-});
 
 const toggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("nav-menu");
 
-toggle.addEventListener("click", () => {
-  toggle.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+if (toggle && menu) {
+  toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+}
 
 const dropdowns = document.querySelectorAll(".dropdown");
 
-dropdowns.forEach(drop => {
+dropdowns.forEach((drop) => {
   drop.addEventListener("click", () => {
     drop.classList.toggle("open");
   });
 });
 
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll(".card");
 
-cards.forEach(card => {
-  card.addEventListener('click', () => {
-    card.classList.add('clicking'); // apply click animation
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.add("clicking");
     setTimeout(() => {
-      window.location.href = card.dataset.link; // redirect after animation
-    }, 200); // 200ms delay for animation
+      window.location.href = card.dataset.link;
+    }, 200);
   });
 });
 
-  AOS.init({
-    duration: 1000,   // smooth speed
-    easing: 'ease-in-out',
-    once: true        // only animate once
+/* TESTIMONIAL DRAG FIX */
+// const container = document.querySelector(".testimonials-container");
+
+// if (container) {
+//   let isDown = false;
+//   let startX;
+//   let scrollLeft;
+
+//   container.addEventListener("mousedown", (e) => {
+//     isDown = true;
+//     startX = e.pageX - container.offsetLeft;
+//     scrollLeft = container.scrollLeft;
+//   });
+
+//   container.addEventListener("mouseup", () => {
+//     isDown = false;
+//   });
+
+//   container.addEventListener("mouseleave", () => {
+//     isDown = false;
+//   });
+
+//   container.addEventListener("mousemove", (e) => {
+//     if (!isDown) return;
+//     e.preventDefault();
+
+//     const x = e.pageX - container.offsetLeft;
+//     const walk = (x - startX) * 2;
+
+//     container.scrollLeft = scrollLeft - walk;
+//   });
+
+//   container.addEventListener("touchstart", (e) => {
+//     startX = e.touches[0].pageX - container.offsetLeft;
+//     scrollLeft = container.scrollLeft;
+//   });
+
+//   container.addEventListener("touchmove", (e) => {
+//     const x = e.touches[0].pageX - container.offsetLeft;
+//     const walk = (x - startX) * 2;
+
+//     container.scrollLeft = scrollLeft - walk;
+//   });
+// }
+
+const track = document.querySelector(".testimonial-track");
+
+if (track) {
+  let position = 0;
+  let speed = 0.9; // auto scroll speed
+  let isDragging = false;
+  let startX;
+  let currentTranslate = 0;
+
+  function autoScroll() {
+    if (!isDragging) {
+      position -= speed;
+      track.style.transform = `translateX(${position}px)`;
+    }
+    requestAnimationFrame(autoScroll);
+  }
+
+  autoScroll();
+
+  // DRAG START
+  track.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    startX = e.pageX;
+    currentTranslate = position;
+    track.style.cursor = "grabbing";
   });
 
-  
+  // DRAG MOVE
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
 
+    const move = e.pageX - startX;
+    position = currentTranslate + move;
+    track.style.transform = `translateX(${position}px)`;
+  });
+
+  // DRAG END
+  window.addEventListener("mouseup", () => {
+    isDragging = false;
+    track.style.cursor = "grab";
+  });
+
+  // TOUCH SUPPORT
+  track.addEventListener("touchstart", (e) => {
+    isDragging = true;
+    startX = e.touches[0].pageX;
+    currentTranslate = position;
+  });
+
+  track.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+
+    const move = e.touches[0].pageX - startX;
+    position = currentTranslate + move;
+    track.style.transform = `translateX(${position}px)`;
+  });
+
+  track.addEventListener("touchend", () => {
+    isDragging = false;
+  });
+}
