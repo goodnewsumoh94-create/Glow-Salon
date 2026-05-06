@@ -224,6 +224,7 @@ section {
   border-radius: 30px;
   text-align: center;
   letter-spacing: 1px;
+  margin: 20px;
 
   /* animation */
   animation: pulse 1.8s ease-in-out infinite;
@@ -958,4 +959,21 @@ section {
   .policy-card {
     padding: 15px;
   }
+}
+
+.cta-btn2{
+  display: inline-block;
+  background: transparent;
+  /* border: 5px solid var(--gold); */
+  color: goldenrod;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 28px;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 7px;
+  outline: goldenrod solid 1.3px;
+
 }
