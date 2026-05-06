@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Popi";
   background: url(img/cback.png);
   background-attachment: fixed;
   padding-top: 90px;
@@ -309,7 +309,7 @@ section {
   text-align: center;
 }
 
-.services h1 {
+.services h2 {
   color: goldenrod;
 }
 
@@ -611,7 +611,7 @@ section {
   overflow: hidden;
 }
 
-.testimonials h1 {
+.testimonials h2 {
   color: #d4af37;
   margin-bottom: 40px;
 }
