@@ -110,7 +110,7 @@ section {
   overflow: hidden;
   height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
+    linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.75)),
     url("img/hero.jpg");
   background-size: cover;
   display: flex;
@@ -964,7 +964,6 @@ section {
 .cta-btn2{
   display: inline-block;
   background: transparent;
-  /* border: 5px solid var(--gold); */
   color: goldenrod;
   font-size: 18px;
   font-weight: bold;
@@ -975,5 +974,6 @@ section {
   letter-spacing: 1px;
   margin: 7px;
   outline: goldenrod solid 1.3px;
+  border-radius: 15px;
 
 }
